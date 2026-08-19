@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <title>Naat Sharif</title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+
+<body>
+
+  <main class="hero">
+
+
+    <!-- =====================================
+         DESKTOP BACKGROUND VIDEO
+    ====================================== -->
+
+    <video
+      id="desktopVideo"
+      class="background-video desktop-video"
+      src="videos/desktop-bg.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+      webkit-playsinline
+      preload="auto"
+      aria-hidden="true"
+    ></video>
+
+
+    <!-- =====================================
+         MOBILE BACKGROUND VIDEO
+    ====================================== -->
+
+    <video
+      id="mobileVideo"
+      class="background-video mobile-video"
+      src="videos/mobile-bg.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+      webkit-playsinline
+      preload="auto"
+      aria-hidden="true"
+    ></video>
+
+
+    <!-- =====================================
+         DARK OVERLAY
+    ====================================== -->
+
+    <div class="video-overlay"></div>
+
+
+    <!-- =====================================
+         PLAYER
+    ====================================== -->
+
+    <section class="player-wrapper">
+
+      <div
+        class="player"
+        id="player"
+      >
+
+
+        <!-- NAAT INFORMATION -->
+
+        <div class="naat-info">
+
+          <span class="label">
+            NOW PLAYING
+          </span>
+
+          <h1 id="naatTitle">
+            Gali Gali Saj Gayi 3
+          </h1>
+
+          <p id="naatArtist">
+            Hafiz Tahir Qadri
+          </p>
+
+        </div>
+
+
+        <!-- PROGRESS -->
+
+        <div class="progress-area">
+
+          <span id="currentTime">
+            0:00
+          </span>
+
+          <input
+            type="range"
+            id="progress"
+            min="0"
+            max="100"
+            value="0"
+            step="0.1"
+            aria-label="Naat progress"
+          >
+
+          <span id="duration">
+            0:00
+          </span>
+
+        </div>
+
+
+        <!-- CONTROLS -->
+
+        <div class="controls">
+
+
+          <!-- PREVIOUS -->
+
+          <button
+            type="button"
+            id="prevBtn"
+            class="control-btn"
+            aria-label="Previous Naat"
+            title="Previous Naat"
+          >
+
+            <span class="prev-icon"></span>
+
+          </button>
+
+
+          <!-- PLAY / PAUSE -->
+
+          <button
+            type="button"
+            id="playBtn"
+            class="play-btn"
+            aria-label="Play"
+            title="Play / Pause"
+          >
+
+            <span class="play-icon"></span>
+
+          </button>
+
+
+          <!-- NEXT -->
+
+          <button
+            type="button"
+            id="nextBtn"
+            class="control-btn"
+            aria-label="Next Naat"
+            title="Next Naat"
+          >
+
+            <span class="next-icon"></span>
+
+          </button>
+
+
+          <!-- LOOP -->
+
+          <button
+            type="button"
+            id="loopBtn"
+            class="loop-btn"
+            aria-label="Loop"
+            title="Loop"
+          >
+
+            <span class="loop-icon">
+              ↻
+            </span>
+
+          </button>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================
+       AUDIO
+  ====================================== -->
+
+  <audio
+    id="audio"
+    src="audio/Gali_Gali_Saj_Gayi_3.mp3"
+    preload="metadata"
+  ></audio>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
