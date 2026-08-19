@@ -5,9 +5,9 @@
 const naats = [
 
   {
-    title: "Aaqa Ka Milaad Aaya",
+    title: "Aaqa Ka Milad Aaya",
     artist: "Owais Raza Qadri",
-    src: "audio/Aaqa_Ka_Milaad_Aaya.mp3"
+    src: "audio/Aaqa_Ka_Milad_Aaya.mp3"
   },
 
   {
